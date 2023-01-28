@@ -260,9 +260,11 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 
 <details><summary>OUTPUT</summary>
 <p>
+```bash
 ExecStart=/usr/local/bin/kube-proxy \\
 	--config=/var/lib/kube-proxy/kube-proxy-config.yaml
 Restart=on-failure
 RestartSec=5
+```
 </p>
 </details>
