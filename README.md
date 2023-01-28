@@ -257,7 +257,7 @@ Use this space to list resources you find helpful and would like to give credit 
      
   1. Apply below manifests:
 
-     <details>
+     <details><summary>OUTPUT</summary>
      
      ```
      apiVersion: v1
