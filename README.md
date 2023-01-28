@@ -253,22 +253,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot]: images/screenshot.png
 
 
-## collapsible markdown?
-```python
-kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
-```
 
-<details><summary>OUTPUT</summary>
- ```
- ExecStart=/usr/local/bin/kube-proxy \\
-	--config=/var/lib/kube-proxy/kube-proxy-config.yaml 
- Restart=on-failure
- RestartSec=5
- ```
-</details>
-
-
- <details>
+     <details>
      
      ```
      apiVersion: v1
