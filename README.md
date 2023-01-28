@@ -254,20 +254,15 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 ## collapsible markdown?
-
-<details>
-<summary>
-  ```python
-  CLICK ME
-  ```
-</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
 ```python
-print("hello world!")
+kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
 ```
 
+<details><summary>OUTPUT</summary>
+<p>
+ExecStart=/usr/local/bin/kube-proxy \\
+	--config=/var/lib/kube-proxy/kube-proxy-config.yaml
+Restart=on-failure
+RestartSec=5
 </p>
 </details>
