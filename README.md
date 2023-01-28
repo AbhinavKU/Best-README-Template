@@ -259,10 +259,32 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 ```
 
 <details><summary>OUTPUT</summary>
-```
-ExecStart=/usr/local/bin/kube-proxy \\
-	--config=/var/lib/kube-proxy/kube-proxy-config.yaml
-Restart=on-failure
-RestartSec=5
-```
+ ```
+ ExecStart=/usr/local/bin/kube-proxy \\
+	--config=/var/lib/kube-proxy/kube-proxy-config.yaml 
+ Restart=on-failure
+ RestartSec=5
+ ```
 </details>
+
+
+ <details>
+     
+     ```
+     apiVersion: v1
+     kind: Pod
+     metadata:
+       creationTimestamp: null
+       labels:
+         run: nginx-pod
+       name: nginx-pod
+     spec:
+       containers:
+       - image: nginx:alpine
+         name: nginx-pod
+         resources: {}
+       dnsPolicy: ClusterFirst
+       restartPolicy: Always
+     status: {}
+     ```
+     </details>
