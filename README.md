@@ -253,9 +253,11 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot]: images/screenshot.png
 
 
-
+```
+     kubectl xyasdasd asdasd sad asd 
+     ```
      
-  1. Apply below manifests:
+
 
      <details><summary>OUTPUT</summary>
      
